@@ -1,1 +1,1 @@
-ls -R ~ | grep -v '^$' | grep '' | sort | head -n 5
+ls -R ~ | grep -v '^$' | grep -v ':$' | sort | head -n 5
