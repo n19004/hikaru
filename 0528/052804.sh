@@ -1,1 +1,1 @@
-du -k /var/* 2> /dev/null | sort -rn | head -5
+sudo ls -lR /var | awk '{print $9, $5}' | sort -nr -k 2 | head -n 5
