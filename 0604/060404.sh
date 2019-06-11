@@ -6,7 +6,7 @@ if [ -d "$1" ]; then
     do
         # fileが実行可能であれば表示
         #if [ -x "${1}/${file}" ] && [ ! -d "${1}/${file}" ]; then
-        if [ -x "$file" ]; then
+        if [ ! -r "$file" ]; then
             #echo "$file"
             #echo `basename "$file"`
             echo $(basename "$file")
